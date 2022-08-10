@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Order:</h1>
+
+    <div class="order-details" >
+
+        
+        <h2>{{order.customer_name}}</h2>
+        <h3>Order:</h3>
+        <p>{{order.game}}</p>
+        <h3>Quantity:</h3>
+        <p>{{order.quantity}}</p>
+        <h3>Date:</h3>
+        <p>{{order.order_date}} </p>
+        
+    </div>
+    
+</body>
+</html>
